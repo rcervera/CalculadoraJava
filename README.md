@@ -52,17 +52,17 @@ Al mètode `main` de la vostra aplicació, heu de:
 ## 🧭 Exemple de Menú
 Menú de SuperCalculadora:
 
-Suma dels primers n números
+1- Suma dels primers n números
 
-Factorial d'un nombre
+2- Factorial d'un nombre
 
-Suma dels quadrats dels primers n números
+3- Suma dels quadrats dels primers n números
 
-Potència d'un nombre
+4- Potència d'un nombre
 
-Nombre de dígits d'un nombre
+5- Nombre de dígits d'un nombre
 
-Sortir
+6- Sortir
 
 Després d'escollir una opció, el programa ha de sol·licitar els valors necessaris per al càlcul i mostrar el resultat.
 
@@ -70,7 +70,7 @@ Després d'escollir una opció, el programa ha de sol·licitar els valors necess
 
 ## ⚙️ Requisits addicionals
 
-- No utilitzeu **atributs** dins de la classe `SuperCalculadora`.  
+
   Tots els càlculs s'han de fer dins dels mètodes.
 - Utilitzeu **estructures de control** (`while`, `for`) per implementar els bucles necessaris.
 - El menú ha de permetre que l'usuari **continuï executant operacions** fins que seleccioni l'opció de **Sortir**.
