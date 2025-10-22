@@ -80,3 +80,18 @@ Després d'escollir una opció, el programa ha de sol·licitar els valors necess
 ## 💡 Consell
 Prova cada mètode per separat abans d’integrar-lo al menú principal per assegurar que els resultats siguin correctes.
 
+
+## 📘 Generar la documentació Javadoc de tots els paquets
+
+Per generar la documentació del projecte en format HTML per a **tots els paquets**, executa la següent comanda des de l’arrel del projecte:
+
+```bash
+javadoc -d doc -sourcepath src/main/java -subpackages .
+
+On:
+
+-d doc especifica la carpeta on es desarà la documentació (es crearà si no existeix).
+
+-sourcepath src/main/java indica la ruta on es troben els fitxers .java.
+
+-subpackages exemple.supercalculadora genera la documentació per a tots els paquets dins d’aquest espai de noms.
