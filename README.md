@@ -88,7 +88,8 @@ Per generar la documentació del projecte en format HTML per a **tots els paquet
 ```bash
 javadoc -d doc -sourcepath src/main/java -subpackages .
 
-On:
+
+**On:**
 
 -d doc especifica la carpeta on es desarà la documentació (es crearà si no existeix).
 
