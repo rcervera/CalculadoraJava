@@ -33,7 +33,7 @@ La classe **`SuperCalculadora`** ha de contenir els següents mètodes:
 
 A la classe `SuperCalculadora`, implementa un mètode anomenat **`mostrarMenuConsola()`** que mostri les diferents operacions disponibles per a l'usuari.  
 Aquest menú ha d'incloure les opcions corresponents a cada càlcul (suma, factorial, suma de quadrats, potència i nombre de dígits).
-Aquest mètode té println's !!
+Aquest mètode excepcionalment té println's !!
 
 ---
 
@@ -41,11 +41,10 @@ Aquest mètode té println's !!
 
 Al mètode `main` de la vostra aplicació, heu de:
 
-1. Crear una instància de la classe `SuperCalculadora`.
-2. Mostrar el menú d'operacions utilitzant el mètode `mostrarMenuConsola()`.
-3. Demanar a l'usuari que triï una de les opcions disponibles.
-4. Demanar per teclat els valors necessaris per al càlcul segons l'opció seleccionada.
-5. Mostrar el resultat de l'operació escollida.
+1. Mostrar el menú d'operacions utilitzant el mètode `mostrarMenuConsola()`.
+2. Demanar a l'usuari que triï una de les opcions disponibles.
+3. Demanar per teclat els valors necessaris per al càlcul segons l'opció seleccionada.
+4. Mostrar el resultat de l'operació escollida.
 
 ---
 
@@ -89,7 +88,7 @@ Per generar la documentació del projecte en format HTML per a **tots els paquet
 javadoc -d doc -sourcepath src/main/java -subpackages .
 
 
-**On:**
+On:**
 
 -d doc especifica la carpeta on es desarà la documentació (es crearà si no existeix).
 
