@@ -27,6 +27,16 @@ La classe **`SuperCalculadora`** ha de contenir els següents mètodes:
 - `nombreDigits(int n)`: retorna el nombre de dígits de *n*  
   *(exemple: el nombre 1234 té 4 dígits)*
 
+  - `esPrimer(int n)`: retorna `true` si el número *n* és primer i `false` en cas contrari.  
+  Un número és **primer** si només és divisible per 1 i per ell mateix.  
+  Pots comprovar-ho dividint *n* entre tots els números des de 2 fins a `n - 1`  
+  i mirant si el residu (`%`) és zero en algun cas.  
+  Si trobes algun divisor, el número **no és primer**.
+
+  - `esPerfecte(int n)`: retorna `true` si el número *n* és perfecte i `false` en cas contrari.  
+  Un número és **perfecte** si la suma dels seus divisors (excloent ell mateix) és igual al propi número.  
+  *(Exemples: 6 → 1 + 2 + 3 = 6, 28 → 1 + 2 + 4 + 7 + 14 = 28)*
+
 ---
 
 ## 📋 Crear un mètode per mostrar el menú d’operacions
@@ -59,9 +69,9 @@ Menú de SuperCalculadora:
 
 4- Potència d'un nombre
 
-5- Nombre de dígits d'un nombre
+5- ...
 
-6- Sortir
+0- Sortir
 
 Després d'escollir una opció, el programa ha de sol·licitar els valors necessaris per al càlcul i mostrar el resultat.
 
