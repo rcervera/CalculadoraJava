@@ -1,15 +1,20 @@
 
-
 package org.yourcompany.calculadora;
 
 /**
- *
+ * Classe Calculadora amb diversos mètodes de càlcul bàsic.
+ * 
  * @author Posa el teu nom
  */
 
-
+ 
 public class Calculadora {
 
+    /**
+     * Mètode principal que mostra exemples d’ús dels mètodes de la classe.
+     *
+     * @param args Arguments de la línia d’ordres (no s’utilitzen)
+     */
     public static void main(String[] args) {
 
         // Exemples de crida per al mètode nombreDigits
@@ -19,28 +24,34 @@ public class Calculadora {
         System.out.println("Nombre de dígits de 0: " + nombreDigits(0));
 
         // Exemples de crida per al mètode sumaPrimersNumeros
-        // System.out.println("Suma dels primers 5 números: " + sumaPrimersNumeros(5));
-        // System.out.println("Suma dels primers 10 números: " + sumaPrimersNumeros(10));
-        // System.out.println("Suma dels primers 15 números: " + sumaPrimersNumeros(15));
+        //System.out.println("Suma dels primers 5 números: " + sumaPrimersNumeros(5));
+        //System.out.println("Suma dels primers 10 números: " + sumaPrimersNumeros(10));
+        //System.out.println("Suma dels primers 15 números: " + sumaPrimersNumeros(15));
 
         // Exemples de crida per al mètode calcularFactorial
-        // System.out.println("Factorial de 5: " + calcularFactorial(5));
-        // System.out.println("Factorial de 7: " + calcularFactorial(7));
-        // System.out.println("Factorial de 10: " + calcularFactorial(10));
+        //System.out.println("Factorial de 5: " + calcularFactorial(5));
+        //System.out.println("Factorial de 7: " + calcularFactorial(7));
+        //System.out.println("Factorial de 10: " + calcularFactorial(10));
 
         // Exemples de crida per al mètode sumaQuadrats
-        // System.out.println("Suma dels quadrats dels primers 3 números: " + sumaQuadrats(3));
-        // System.out.println("Suma dels quadrats dels primers 5 números: " + sumaQuadrats(5));
-        // System.out.println("Suma dels quadrats dels primers 7 números: " + sumaQuadrats(7));
+        //System.out.println("Suma dels quadrats dels primers 3 números: " + sumaQuadrats(3));
+        //System.out.println("Suma dels quadrats dels primers 5 números: " + sumaQuadrats(5));
+        //System.out.println("Suma dels quadrats dels primers 7 números: " + sumaQuadrats(7));
 
         // Exemples de crida per al mètode calcularPotencia
-        // System.out.println("2 elevat a la potència 3: " + calcularPotencia(2, 3));
-        // System.out.println("5 elevat a la potència 4: " + calcularPotencia(5, 4));
-        // System.out.println("3 elevat a la potència 5: " + calcularPotencia(3, 5));
+        //System.out.println("2 elevat a la potència 3: " + calcularPotencia(2, 3));
+        //System.out.println("5 elevat a la potència 4: " + calcularPotencia(5, 4));
+        //System.out.println("3 elevat a la potència 5: " + calcularPotencia(3, 5));
 
-       
-        
+        // Exemples  Crida a la Resta de mètodes aquí
+        // 
+
+
+        // Fer menú aquí:
+
     }
+
+   
 
     /**
      * Calcula el nombre de dígits d’un número enter.
@@ -52,15 +63,16 @@ public class Calculadora {
      */
     public static int nombreDigits(int nombre) {
         if (nombre == 0) {
-            return 1; // el 0 té un dígit
-        }        
+            return 1;
+        }
         int comptador = 0;
-        while (nombre != 0) {
+        nombre = Math.abs(nombre);
+        while (nombre > 0) {
             nombre /= 10;
             comptador++;
         }
         return comptador;
     }
 
-
+    
 }
