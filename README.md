@@ -27,13 +27,13 @@ La classe **`SuperCalculadora`** ha de contenir els següents mètodes:
 - `nombreDigits(int n)`: retorna el nombre de dígits de *n*  
   *(exemple: el nombre 1234 té 4 dígits)*
 
-  - `esPrimer(int n)`: retorna `true` si el número *n* és primer i `false` en cas contrari.  
+- `esPrimer(int n)`: retorna `true` si el número *n* és primer i `false` en cas contrari.  
   Un número és **primer** si només és divisible per 1 i per ell mateix.  
   Pots comprovar-ho dividint *n* entre tots els números des de 2 fins a `n - 1`  
   i mirant si el residu (`%`) és zero en algun cas.  
   Si trobes algun divisor, el número **no és primer**.
 
-  - `esPerfecte(int n)`: retorna `true` si el número *n* és perfecte i `false` en cas contrari.  
+- `esPerfecte(int n)`: retorna `true` si el número *n* és perfecte i `false` en cas contrari.  
   Un número és **perfecte** si la suma dels seus divisors (excloent ell mateix) és igual al propi número.  
   *(Exemples: 6 → 1 + 2 + 3 = 6, 28 → 1 + 2 + 4 + 7 + 14 = 28)*
 
@@ -105,3 +105,10 @@ On:
 -sourcepath src/main/java indica la ruta on es troben els fitxers .java.
 
 -subpackages exemple.supercalculadora genera la documentació per a tots els paquets dins d’aquest espai de noms.
+
+
+## 🧪 Realitzar proves unitaries
+
+Per comprovar el correcte funcionament de cada mètode de la classe **SuperCalculadora**, s’han de crear **tests unitaris** utilitzant **JUnit**.
+
+Cada mètode ha de tenir **almenys un test** que comprovi el seu comportament amb **valors normals**, i si és possible, també amb **casos límit** o **valors especials**.
