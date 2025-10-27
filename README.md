@@ -107,7 +107,7 @@ On:
 -subpackages exemple.supercalculadora genera la documentació per a tots els paquets dins d’aquest espai de noms.
 
 
-## 🧪 Realitzar proves unitaries
+## 🧪 Realitzar proves unitàries
 
 Per comprovar el correcte funcionament de cada mètode de la classe **SuperCalculadora**, s’han de crear **tests unitaris** utilitzant **JUnit**.
 
